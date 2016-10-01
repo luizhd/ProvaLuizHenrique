@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>	LISTAR CONTATOS </title>
+
+		<link rel="stylesheet" href="icons/material.css">
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
+	</head>
+
+	<body>
+
+		<ul class="tabs">
+			<li class="tab">
+				<a href="#divAdicionar">Adicionar Contatos</a>
+			</li>
+			<li class="tab" id="listarContatos">
+				<a href="#divListar">Listar Contatos</a>
+			</li>
+			<li class="tab" id="listarDuplicados">
+				<a href="#divDuplica">Listar Duplicados</a>
+			</li>
+		</ul>
+		<div id="divAdicionar" class="section">
+			<div class="collection">
+
+				<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="nome">Nome</label>
+				</div>
+
+				<div class="input-field col s6">
+					<input id="numero" type="text" class="validate">
+					<label for="numero">Numero</label>
+				</div>
+
+				<button id="butConcluir" class="waves-effect waves-teal btn-flat"> Confirmar </button>
+				<button id="butCancelar" class="waves-effect waves-teal btn-flat"> Cancelar </button>
+			</div>
+
+		</div>
+		<div id="divListar" class="section">
+			<div class="collection" id="listContatos">
+				
+			</div>
+		</div>
+		<div id="divDuplica" class="section">
+			<div class="collection" id="listDuplicados">
+				
+			</div>
+		</div>
+		<script src="js/app.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="cordova.js"></script>
+	</body>
+</html>
